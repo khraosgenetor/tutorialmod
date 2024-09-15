@@ -6,6 +6,7 @@ on:
   push:
     branches: # Specify your branches here
       - main # The 'main' branch
+      - master
       - 'releases/*' # The release branches
 
 jobs:
