@@ -14,8 +14,9 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_CRUDE = ITEMS.register("ruby_crude",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RUBY_ITEM = ITEMS.register("ruby_item",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_ITEM =
+            ITEMS.register("ruby_item",
+                    () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

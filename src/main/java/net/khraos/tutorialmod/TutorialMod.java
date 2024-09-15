@@ -1,6 +1,7 @@
 package net.khraos.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.khraos.tutorialmod.item.ModCreativeModeTabs;
 import net.khraos.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class TutorialMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -48,10 +50,7 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RUBY_CRUDE);
-            event.accept(ModItems.RUBY_ITEM);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
