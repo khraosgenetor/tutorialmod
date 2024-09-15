@@ -16,10 +16,10 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> TUTORIAL_GEMS =
             CREATIVE_MODE_TABS.register("tutorial_gems",
                     () -> CreativeModeTab.builder()
-                        .icon(() -> new ItemStack(ModItems.RUBY_ITEM.get()))
+                        .icon(() -> new ItemStack(ModItems.RUBY_CRYSTAL.get()))
                         .title(Component.translatable("creativetab.tutorial_gems"))
                             .displayItems((itemDisplayParameters, output) -> {
-                                output.accept(ModItems.RUBY_ITEM.get());
+                                output.accept(ModItems.RUBY_CRYSTAL.get());
                                 output.accept(ModItems.RUBY_CRUDE.get());
                             })
                         .build());
