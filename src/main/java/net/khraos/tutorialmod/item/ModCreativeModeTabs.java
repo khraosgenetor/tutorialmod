@@ -1,6 +1,7 @@
 package net.khraos.tutorialmod.item;
 
 import net.khraos.tutorialmod.TutorialMod;
+import net.khraos.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,8 @@ public class ModCreativeModeTabs {
                             .displayItems((itemDisplayParameters, output) -> {
                                 output.accept(ModItems.RUBY_CRYSTAL.get());
                                 output.accept(ModItems.RUBY_CRUDE.get());
+                                output.accept(ModBlocks.RUBY_CRYSTAL_BLOCK.get());
+                                output.accept(ModBlocks.RUBY_CRUDE_BLOCK.get());
                             })
                         .build());
 

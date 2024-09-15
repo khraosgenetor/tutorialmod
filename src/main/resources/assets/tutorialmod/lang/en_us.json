@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.ruby_crude": "Crude Ruby",
   "item.tutorialmod.ruby_crystal": "Ruby Crystal",
+  "block.tutorialmod.ruby_crude_block": "Block of Crude Ruby",
+  "block.tutorialmod.ruby_crystal_block": "Block of Ruby Crystal  ",
   "creativetab.tutorial_gems": "Tutorial Gems"
 }

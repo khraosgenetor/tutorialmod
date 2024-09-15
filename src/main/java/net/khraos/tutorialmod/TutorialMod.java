@@ -1,6 +1,7 @@
 package net.khraos.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.khraos.tutorialmod.block.ModBlocks;
 import net.khraos.tutorialmod.item.ModCreativeModeTabs;
 import net.khraos.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -32,6 +33,7 @@ public class TutorialMod
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
