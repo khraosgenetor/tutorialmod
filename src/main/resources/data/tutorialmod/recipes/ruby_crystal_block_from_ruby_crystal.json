@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:ruby_crystal"
+    }
+  },
+  "result": {
+    "id": "tutorialmod:ruby_crystal_block"
+  }
+}

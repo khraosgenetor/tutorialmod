@@ -1,7 +1,18 @@
 {
+  "creativetab.tutorial_gems": "Tutorial Gems",
+
+  "block.tutorialmod.ruby_ore": "Ruby Ore",
+  "block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.tutorialmod.nether_ruby_ore": "Nether Ruby Ore",
+  "block.tutorialmod.end_stone_ruby_ore": "Endstone Ruby Ore",
+
   "item.tutorialmod.ruby_crude": "Crude Ruby",
-  "item.tutorialmod.ruby_crystal": "Ruby Crystal",
   "block.tutorialmod.ruby_crude_block": "Block of Crude Ruby",
-  "block.tutorialmod.ruby_crystal_block": "Block of Ruby Crystal  ",
-  "creativetab.tutorial_gems": "Tutorial Gems"
+
+  "item.tutorialmod.corundum": "Corundum",
+
+  "item.tutorialmod.ruby_crystal": "Ruby Crystal",
+  "block.tutorialmod.ruby_crystal_block": "Block of Ruby Crystal",
+
+  "item.tutorialmod.metal_detector": "Metal Detector"
 }
