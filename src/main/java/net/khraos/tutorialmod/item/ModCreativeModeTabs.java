@@ -37,10 +37,32 @@ public class ModCreativeModeTabs {
             CREATIVE_MODE_TABS.register("machinery",
                     () -> CreativeModeTab.builder()
                             .icon(
-                                    () -> new ItemStack(ModItems.METAL_DETECTOR.get()))
+                                    () -> new ItemStack(ModItems.ORE_DETECTOR.get()))
                             .title(Component.translatable("creativetab.machinery"))
                             .displayItems(((itemDisplayParameters, output) -> {
-                                output.accept(ModItems.METAL_DETECTOR.get());
+                                output.accept(ModItems.ORE_DETECTOR.get());
+                            }))
+                            .build());
+
+    public static final RegistryObject<CreativeModeTab> UTILITY =
+            CREATIVE_MODE_TABS.register("utility",
+                    () -> CreativeModeTab.builder()
+                            .icon(
+                                    () -> new ItemStack(ModBlocks.SOUND_BLOCK.get()))
+                            .title(Component.translatable("creativetab.utility"))
+                            .displayItems(((itemDisplayParameters, output) -> {
+                               output.accept(ModBlocks.SOUND_BLOCK.get());
+                            }))
+                            .build());
+
+    public static final RegistryObject<CreativeModeTab> TUTORIAL_FOOD =
+            CREATIVE_MODE_TABS.register("tutorial_food",
+                    () -> CreativeModeTab.builder()
+                            .icon(
+                                    () -> new ItemStack(ModItems.CHOCOLATE_WAFFLE.get()))
+                            .title(Component.translatable("creativetab.tutorial_food"))
+                            .displayItems(((itemDisplayParameters, output) -> {
+                                output.accept(ModItems.CHOCOLATE_WAFFLE.get());
                             }))
                             .build());
 

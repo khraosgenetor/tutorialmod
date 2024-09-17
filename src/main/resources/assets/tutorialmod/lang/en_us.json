@@ -1,6 +1,8 @@
 {
   "creativetab.tutorial_gems": "Tutorial Gems",
   "creativetab.machinery": "Machinery",
+  "creativetab.utility": "Utility",
+  "creativetab.tutorial_food": "Tutorial Food",
 
   "block.tutorialmod.ruby_ore": "Ruby Ore",
   "block.tutorialmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
@@ -15,5 +17,9 @@
   "item.tutorialmod.ruby_crystal": "Ruby Crystal",
   "block.tutorialmod.ruby_crystal_block": "Block of Ruby Crystal",
 
-  "item.tutorialmod.metal_detector": "Metal Detector"
+  "item.tutorialmod.metal_detector": "Metal Detector",
+
+  "block.tutorialmod.sound_block": "Sound Block",
+
+  "item.tutorialmod.chocolate_waffle": "Chocolate Waffle"
 }

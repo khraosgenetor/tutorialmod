@@ -1,7 +1,7 @@
 package net.khraos.tutorialmod.item;
 
 import net.khraos.tutorialmod.TutorialMod;
-import net.khraos.tutorialmod.item.metaldetectoritem.MetalDetectorItem;
+import net.khraos.tutorialmod.item.OreDetectorItem.OreDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,9 +24,13 @@ public class ModItems {
             ITEMS.register("corundum",
                     () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> METAL_DETECTOR =
-            ITEMS.register("metal_detector",
-                    () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> ORE_DETECTOR =
+            ITEMS.register("ore_detector",
+                    () -> new OreDetectorItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> CHOCOLATE_WAFFLE =
+            ITEMS.register("chocolate_waffle",
+                    () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_WAFFLE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
