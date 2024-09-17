@@ -12,9 +12,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 import java.util.Set;
 
 public class MetalDetectorItem extends Item {
@@ -23,7 +20,7 @@ public class MetalDetectorItem extends Item {
     }
 
     @Override
-    public @NotNull InteractionResult useOn(UseOnContext pContext) {
+    public InteractionResult useOn(UseOnContext pContext) {
         if (!pContext.getLevel().isClientSide()) {
             BlockPos posClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
@@ -33,7 +30,6 @@ public class MetalDetectorItem extends Item {
                 BlockState state = pContext.getLevel().getBlockState(posClicked.below(i));
 
                 if(isValuableBlock(state)) {
-                    assert player != null;
                     outputBlockCo_Ords(posClicked.below(i), player, state.getBlock());
                     foundValuable = true;
                     break;
@@ -41,15 +37,13 @@ public class MetalDetectorItem extends Item {
             }
 
             if (!foundValuable) {
-                assert player != null;
                 player.sendSystemMessage(Component.literal("Found no valuable ore."));
             }
 
         }
 
-        pContext.getItemInHand().hurtAndBreak(1,
-                Objects.requireNonNull(pContext.getPlayer()),
-                Objects.requireNonNull(pContext.getItemInHand().getEquipmentSlot())
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
+                pContext.getItemInHand().getEquipmentSlot()
         );
 
         return InteractionResult.SUCCESS;
